@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Period Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js'></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Period Tracker</h1>
+        
+        <!-- Error Message Container -->
+        <div id="error-container" style="display: none; color: red; text-align: center;"></div>
+
+        <!-- User Registration Form -->
+        <div id="register-section">
+            <h2>Register</h2>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="number" id="age" placeholder="Age" required min="1">
+            <button onclick="register()">Register</button>
+        </div>
+
+        <!-- User Login Form -->
+        <div id="login-section">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+        </div>
+
+        <!-- Add Period Cycle -->
+        <div id="cycle-section" style="display:none;">
+            <h2>Add Period Cycle</h2>
+            <input type="date" id="start_date" placeholder="Start Date" required>
+            <input type="date" id="end_date" placeholder="End Date" required>
+            <button onclick="addCycle()">Add Cycle</button>
+        </div>
+
+        <!-- Period Log Section -->
+        <div id="log-section" style="display:none;">
+            <h2>Period Log</h2>
+            <ul id="period-log"></ul>
+        </div>
+
+        <!-- Calendar to Display Period Days -->
+        <div id="calendar-section" style="display:none;">
+            <h2>Your Period Calendar</h2>
+            <div id="calendar"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
 
