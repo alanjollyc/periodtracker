@@ -29,6 +29,85 @@ The Period Tracker is a web application designed to help users log and track the
   - JSON Web Tokens (JWT) for user authentication
   - Bcrypt for password hashing
 
+## INTERFACE
+Here's a detailed breakdown of the **registration**, **login**, **add period cycle**, **calendar display**, and **next estimated date** features for your period tracker application. This will help you understand the user interface (UI) and backend interactions required for each feature.
+
+### 1. User Registration and Login
+
+#### Registration Page
+
+**UI Elements:**
+- **Input Fields**:
+  - Username
+  - Email
+  - Password
+  - Age
+- **Button**: Register
+
+**Functionality:**
+- When the user fills out the registration form and clicks the "Register" button, the application should:
+  - Validate the input (e.g., check for empty fields, valid email format).
+  - Send a POST request to the server (e.g., `/register`) with the user details.
+  - On success, display a message (e.g., "Registration successful") and redirect to the login page.
+  - On failure, display an error message (e.g., "Email already exists").
+
+#### Login Page
+
+**UI Elements:**
+- **Input Fields**:
+  - Email
+  - Password
+- **Button**: Login
+
+**Functionality:**
+- When the user fills out the login form and clicks the "Login" button, the application should:
+  - Validate the input.
+  - Send a POST request to the server (e.g., `/login`) with the email and password.
+  - On successful authentication, store the token (if using JWT) and redirect the user to the dashboard.
+  - On failure, display an error message (e.g., "Invalid credentials").
+
+
+
+### 2. Adding Period Cycle
+
+**UI Elements:**
+- **Input Fields**:
+  - Start Date (date picker)
+  - End Date (date picker)
+- **Button**: Add Cycle
+
+**Functionality:**
+- When the user selects the start and end dates and clicks the "Add Cycle" button, the application should:
+  - Validate the input dates (ensure start date is before end date).
+  - Calculate the cycle length (if needed).
+  - Send a POST request to the server (e.g., `/cycle`) with the cycle details.
+  - On success, display a success message and update the calendar.
+
+
+
+### 3. Calendar Display
+
+Use **FullCalendar** to display the periods visually on a calendar. When a period is added, update the calendar to reflect the new period.
+
+
+### 4. Next Estimated Date Calculation
+
+To estimate the next period date, you can use the information about the last cycle to predict the next one. This is often based on the cycle length (e.g., 28 days).
+
+**Functionality:**
+- After adding a new cycle, calculate the next expected period start date based on the current cycle's end date and cycle length.
+- Display this information in the UI.
+
+
+
+### Summary of Features
+
+1. **Registration and Login**: Users can register and log in to the application.
+2. **Add Period Cycle**: Users can input start and end dates for their period cycles, which are stored in the database.
+3. **Calendar Display**: The calendar visually represents the period days, making it easy to see cycles at a glance.
+4. **Next Estimated Date**: After adding a cycle, the next estimated start date for the period is calculated and displayed.
+
+
 ## Setup Instructions
 
 ### Prerequisites
@@ -102,4 +181,14 @@ The Period Tracker is a web application designed to help users log and track the
 - Node.js and Express for server-side logic.
 
 ---
+
+
+
+![Screenshot from 2024-10-17 22-21-32](https://github.com/user-attachments/assets/31388272-1af0-46d4-972a-e0f8a83cf83e)
+
+
+
+
+
+
 
