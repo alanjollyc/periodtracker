@@ -36,6 +36,8 @@ Here's a detailed breakdown of the **registration**, **login**, **add period cyc
 
 #### Registration Page
 
+![Screenshot from 2024-10-17 22-22-09](https://github.com/user-attachments/assets/14d24af9-30eb-4a00-bc53-d3fd8c9932c8)
+
 **UI Elements:**
 - **Input Fields**:
   - Username
@@ -51,6 +53,11 @@ Here's a detailed breakdown of the **registration**, **login**, **add period cyc
   - On success, display a message (e.g., "Registration successful") and redirect to the login page.
   - On failure, display an error message (e.g., "Email already exists").
 
+ ![Screenshot from 2024-10-17 22-21-49](https://github.com/user-attachments/assets/61e030f5-05f9-416f-9104-e82e414b5d4d)
+
+ ![Screenshot from 2024-10-17 22-21-32](https://github.com/user-attachments/assets/31388272-1af0-46d4-972a-e0f8a83cf83e)
+
+
 #### Login Page
 
 **UI Elements:**
@@ -65,6 +72,8 @@ Here's a detailed breakdown of the **registration**, **login**, **add period cyc
   - Send a POST request to the server (e.g., `/login`) with the email and password.
   - On successful authentication, store the token (if using JWT) and redirect the user to the dashboard.
   - On failure, display an error message (e.g., "Invalid credentials").
+
+![Screenshot from 2024-10-17 22-23-02](https://github.com/user-attachments/assets/5de3da5a-00a7-406f-a587-0b865fe28954)
 
 
 
@@ -84,10 +93,16 @@ Here's a detailed breakdown of the **registration**, **login**, **add period cyc
   - On success, display a success message and update the calendar.
 
 
+![Screenshot from 2024-10-17 22-23-43](https://github.com/user-attachments/assets/023875ef-8d82-4c41-b3bf-858e8159f276)
+![Screenshot from 2024-10-17 22-23-54](https://github.com/user-attachments/assets/f2a6f731-f4a8-400b-ba5e-dc5ff62686eb)
+
 
 ### 3. Calendar Display
 
 Use **FullCalendar** to display the periods visually on a calendar. When a period is added, update the calendar to reflect the new period.
+
+![Screenshot from 2024-10-17 22-24-44](https://github.com/user-attachments/assets/2a8d902a-980e-4b3e-a7ce-e5f8f669d3cd)
+![Screenshot from 2024-10-17 22-24-49](https://github.com/user-attachments/assets/e63e6226-3b53-43d9-8c7d-3e4e770b38f0)
 
 
 ### 4. Next Estimated Date Calculation
@@ -98,6 +113,7 @@ To estimate the next period date, you can use the information about the last cyc
 - After adding a new cycle, calculate the next expected period start date based on the current cycle's end date and cycle length.
 - Display this information in the UI.
 
+![Screenshot from 2024-10-17 22-24-02](https://github.com/user-attachments/assets/0bd8d748-4188-434f-a2e3-d39e15c6c357)
 
 
 ### Summary of Features
@@ -184,7 +200,6 @@ To estimate the next period date, you can use the information about the last cyc
 
 
 
-![Screenshot from 2024-10-17 22-21-32](https://github.com/user-attachments/assets/31388272-1af0-46d4-972a-e0f8a83cf83e)
 
 
 
