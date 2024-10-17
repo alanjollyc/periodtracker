@@ -166,7 +166,6 @@ To estimate the next period date, you can use the information about the last cyc
        cycle_length INT,
        FOREIGN KEY (user_id) REFERENCES Users(user_id)
    );
-   -- Reminders Table
 
    ```
 
