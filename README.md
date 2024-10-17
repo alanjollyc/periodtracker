@@ -69,14 +69,7 @@ The Period Tracker is a web application designed to help users log and track the
        FOREIGN KEY (user_id) REFERENCES Users(user_id)
    );
    -- Reminders Table
- CREATE TABLE Reminders (
-    reminder_id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT,
-    reminder_type VARCHAR(50),
-    reminder_time TIMESTAMP NOT NULL,
-    is_completed BOOLEAN DEFAULT FALSE,
-    FOREIGN KEY (user_id) REFERENCES Users(user_id)
-);
+
    ```
 
 4. **Run the Application**
