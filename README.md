@@ -1,6 +1,6 @@
 # periodtracker
 
-Below is a structured explanation of the Period Tracker web application .
+Below is a structured explanation of the Period Tracker web application .(BACKEND-MYSQL ,FRONTEND-HTML,JS,CSS)
 
 ---
 
@@ -38,16 +38,19 @@ The Period Tracker is a web application designed to help users log and track the
 ### Installation
 1. **Clone the Repository**
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   Clone the Repository or download the repository and extract the zip
+   
    ```
 
 2. **Install Dependencies**
+
+   Go to the period-tracker-app directory in the terminal
    ```bash
    npm install
+   npm init -y
    ```
 
-3. **Setup the Database**
+4. **Setup the Database**
    - Create a MySQL database named `PeriodTrackerApp`.
    - Create the following tables:
 
@@ -72,7 +75,7 @@ The Period Tracker is a web application designed to help users log and track the
 
    ```
 
-4. **Run the Application**
+5. **Run the Application**
    - Start the server:
    ```bash
    node server.js
@@ -84,11 +87,14 @@ The Period Tracker is a web application designed to help users log and track the
 - After logging in, you can add new period cycles and view them on the calendar.
 - The period log will show previous cycles and the estimated next cycle.
 
-## Contribution
-Contributions are welcome! Please follow the standard Git workflow for contributing to this project.
+## contributors
+VML22CS024 AKASH K
+VML22CS025 AKSA JOSE
+VML22CS028 AKSHAY K
+VML22CS030 ALAN JOLLY CHEERAMVELIL
+VML22CS033 ALEN SALES K S
+VML22CS039 AMAL KRISHNA M
 
-## License
-This project is licensed under the MIT License.
 
 ## Acknowledgments
 - FullCalendar for the calendar component.
