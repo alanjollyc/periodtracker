@@ -1,4 +1,4 @@
-# periodtracker
+# PERIOD TRACKER
 
 Below is a structured explanation of the Period Tracker web application .(BACKEND-MYSQL ,FRONTEND-HTML,JS,CSS)
 
