@@ -88,12 +88,12 @@ The Period Tracker is a web application designed to help users log and track the
 - The period log will show previous cycles and the estimated next cycle.
 
 ## contributors
--VML22CS024 AKASH K .
--VML22CS025 AKSA JOSE.
--VML22CS028 AKSHAY K.
--VML22CS030 ALAN JOLLY CHEERAMVELIL.
--VML22CS033 ALEN SALES K S.
--VML22CS039 AMAL KRISHNA M.
+- VML22CS024 AKASH K .
+- VML22CS025 AKSA JOSE.
+- VML22CS028 AKSHAY K.
+- VML22CS030 ALAN JOLLY CHEERAMVELIL.
+- VML22CS033 ALEN SALES K S.
+- VML22CS039 AMAL KRISHNA M.
 
 
 ## Acknowledgments
